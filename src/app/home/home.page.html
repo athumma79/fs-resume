@@ -1,14 +1,70 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+    <ion-title class="center">
+      Apoorva Thumma
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-avatar class="avatar">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-list>
+      <ion-item>
+       <ion-label>Firstname</ion-label>
+       Apoorva
+      </ion-item>
+      <ion-item>
+        <ion-label>Lastname</ion-label>
+        Thumma
+      </ion-item>
+      <ion-item>
+        <ion-label>Github</ion-label>
+        athumma79
+      </ion-item>
+      <ion-item>
+          <ion-label>Email</ion-label>
+          apoorva.thumma79@gmail.com
+        </ion-item>
+      <ion-item>
+        <ion-label>Date of Birth</ion-label>
+        <ion-datetime disabled displayFormat="MM/DD/YYYY" [(ngModel)]="myDateOfBirth"></ion-datetime>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="ion-padding" class="center">
+    <h2>My Skills</h2>
+    <ion-chip>
+      <ion-label>Java</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-label>Python</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-label>C</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-label>Adobe Dreamweaver</ion-label>
+    </ion-chip>
+  </div>
+  <div class="ion-padding" class="center">
+    <h2>Some Random Icons</h2>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="checkmark"></ion-icon>
+    <ion-icon name="code"></ion-icon>
+  </div>
+  <div class="ion-padding" class="center">
+    <h2>Some Random Buttons</h2>
+    <ion-button (click)="pressMe()">Alert</ion-button>
+    <ion-button (click)="presentToast()">Toast</ion-button>
+  </div>
+  <div class="ion-padding" class="center">
+    <h2>Some Random Inputs</h2>
+    <ion-label>Small Input</ion-label>
+    <ion-input placeholder="Small Input"></ion-input>
+    <ion-label>Large Input</ion-label>
+    <ion-textarea placeholder="Large Input"></ion-textarea>
   </div>
 </ion-content>
